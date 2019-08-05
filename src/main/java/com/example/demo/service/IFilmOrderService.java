@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
  * @author fenglang
  * @since 2019-07-25
  */
-public interface IFilmOrderService extends IService<FilmOrder> {\
+public interface IFilmOrderService extends IService<FilmOrder> {
 
     /**
      * 订票
