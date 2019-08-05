@@ -22,6 +22,7 @@ public class UserController {
     @ApiOperation(value = "登录",notes = "登录")
     @RequestMapping(value="/login",method = RequestMethod.POST)
     public String login(@RequestBody User user, HttpSession session){
+        //noinspection AlibabaUndefineMagicConstant
         if("zhangsan".equalsIgnoreCase(user.getUserName()) && "123456".equalsIgnoreCase(user.getPassword())){
             session.setAttribute("userInfo",user);
         }

@@ -49,11 +49,12 @@ public class FilmController {
     @ApiOperation(value = "购票")
     @LogAnno(operateType = "购票操作")
     public ResponseMessage order(@RequestBody Film film) {
-        //判断是否登录
-//        User user = (User)session.getAttribute("userInfo");
-//        if(null == user || null == user.getUserName()){
-//            return new ResponseMessage(1,"未登录");
-//        }
+        // 判断是否登录
+        ///
+       /* User user = (User)session.getAttribute("userInfo");
+        if(null == user || null == user.getUserName()){
+            return new ResponseMessage(1,"未登录");
+        }*/
         return filmOrderService.orderByQueue(film);
     }
 }

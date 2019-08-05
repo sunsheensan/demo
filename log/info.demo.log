@@ -1,0 +1,22 @@
+2019-08-05 15:43:48,175 [main] INFO  com.example.demo.util.ToBeTestTest 55 - Starting ToBeTestTest on DIY-PC with PID 780 (started by DIY in E:\ideaWorkspace\demo)
+2019-08-05 15:43:48,177 [main] INFO  com.example.demo.util.ToBeTestTest 650 - No active profile set, falling back to default profiles: default
+2019-08-05 15:43:50,182 [main] WARN  o.m.s.mapper.ClassPathMapperScanner 239 - Skipping MapperFactoryBean with name 'IFilmDao' and 'com.example.demo.dao.IFilmDao' mapperInterface. Bean already defined with the same name!
+2019-08-05 15:43:50,183 [main] WARN  o.m.s.mapper.ClassPathMapperScanner 239 - Skipping MapperFactoryBean with name 'IFilmOrderDao' and 'com.example.demo.dao.IFilmOrderDao' mapperInterface. Bean already defined with the same name!
+2019-08-05 15:43:50,184 [main] WARN  o.m.s.mapper.ClassPathMapperScanner 239 - Skipping MapperFactoryBean with name 'ILogtableDao' and 'com.example.demo.dao.ILogtableDao' mapperInterface. Bean already defined with the same name!
+2019-08-05 15:43:50,184 [main] WARN  o.m.s.mapper.ClassPathMapperScanner 239 - Skipping MapperFactoryBean with name 'IUserDao' and 'com.example.demo.dao.IUserDao' mapperInterface. Bean already defined with the same name!
+2019-08-05 15:43:50,185 [main] WARN  o.m.s.mapper.ClassPathMapperScanner 166 - No MyBatis mapper was found in '[com.example.demo.dao]' package. Please check your configuration.
+2019-08-05 15:43:50,990 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-05 15:43:51,605 [main] INFO  com.zaxxer.hikari.HikariDataSource 110 - HikariPool-1 - Starting...
+2019-08-05 15:43:51,855 [main] INFO  com.zaxxer.hikari.HikariDataSource 123 - HikariPool-1 - Start completed.
+2019-08-05 15:43:53,314 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping 69 - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2019-08-05 15:43:53,941 [main] INFO  o.s.w.s.v.v.VelocityConfigurer 137 - ClasspathResourceLoader with name 'springMacro' added to configured VelocityEngine
+2019-08-05 15:43:53,952 [main] INFO  o.s.ui.velocity.SpringResourceLoader 92 - SpringResourceLoader for Velocity: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@47a86fbb, started on Mon Aug 05 15:43:48 CST 2019] and resource loader paths [classpath:/templates/]
+2019-08-05 15:43:54,332 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler 171 - Initializing ExecutorService 'taskScheduler'
+2019-08-05 15:43:54,528 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper 160 - Context refreshed
+2019-08-05 15:43:54,595 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper 163 - Found 1 custom documentation plugin(s)
+2019-08-05 15:43:54,632 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner 41 - Scanning for api listing references
+2019-08-05 15:43:55,341 [main] INFO  com.example.demo.util.ToBeTestTest 61 - Started ToBeTestTest in 7.788 seconds (JVM running for 8.962)
+2019-08-05 15:43:55,853 [main] INFO  com.example.demo.util.ToBeTestTest 52 - ------------
+2019-08-05 15:43:56,319 [Thread-4] INFO  o.s.s.c.ThreadPoolTaskScheduler 208 - Shutting down ExecutorService 'taskScheduler'
+2019-08-05 15:43:56,381 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource 350 - HikariPool-1 - Shutdown initiated...
+2019-08-05 15:43:56,407 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource 352 - HikariPool-1 - Shutdown completed.

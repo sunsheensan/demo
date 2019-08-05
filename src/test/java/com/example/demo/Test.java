@@ -7,7 +7,15 @@ public class Test {
         inc++;
     }
 
+    /**
+     * TODO
+     * @param args
+     */
     public static void main(String[] args) {
+        /**
+         * TODO
+         */
+
         final Test test = new Test();
         for(int i=0;i<10;i++){
             new Thread(){

@@ -6,7 +6,7 @@ import com.example.demo.entity.Film;
 import com.example.demo.entity.FilmOrder;
 import com.example.demo.service.IFilmOrderService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-import com.example.demo.util.activeMqServer;
+import com.example.demo.util.ActiveMqServer;
 import com.example.demo.util.ResponseMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -33,7 +33,7 @@ public class FilmOrderServiceImpl extends ServiceImpl<IFilmOrderDao, FilmOrder> 
     IFilmDao filmDao;
 
     @Autowired
-    activeMqServer activeMqServer;
+    ActiveMqServer activeMqServer;
 
     @Override
     public ResponseMessage orderByQueue(Film film){

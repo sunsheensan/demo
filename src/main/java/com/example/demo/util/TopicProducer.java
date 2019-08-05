@@ -28,34 +28,31 @@ public class TopicProducer {
             Destination destination = session.createTopic("topic1");
             //消息生产者
             MessageProducer producer = session.createProducer(destination);
-//            producer.setDeliveryMode(DeliveryMode.PERSISTENT); //持久化
-
-
-//           // 文本消息
-//          TextMessage textMessage = session.createTextMessage("这是文本消息");
-//          producer.send(textMessage);
-
-            // 键值对消息
+            ///
+            /*producer.setDeliveryMode(DeliveryMode.PERSISTENT);
+            TextMessage textMessage = session.createTextMessage("这是文本消息");
+            producer.send(textMessage);*/
             MapMessage mapMessage = session.createMapMessage();
             mapMessage.setString("reqDesc", msg);
             producer.send(mapMessage);
-//
-//            //流消息
-//            StreamMessage streamMessage = session.createStreamMessage();
-//            streamMessage.writeString("这是流消息");
-//            producer.send(streamMessage);
-//
-//            //字节消息
-//            String s = "BytesMessage字节消息";
-//            BytesMessage bytesMessage = session.createBytesMessage();
-//            bytesMessage.writeBytes(s.getBytes());
-//            producer.send(bytesMessage);
-//
-//            //对象消息
-//            User user = new User("obj_info", "对象消息"); //User对象必须实现Serializable接口
-//            ObjectMessage objectMessage = session.createObjectMessage();
-//            objectMessage.setObject(user);
-//            producer.send(objectMessage);
+            ///
+/*
+            //流消息
+            StreamMessage streamMessage = session.createStreamMessage();
+            streamMessage.writeString("这是流消息");
+            producer.send(streamMessage);
+
+            //字节消息
+            String s = "BytesMessage字节消息";
+            BytesMessage bytesMessage = session.createBytesMessage();
+            bytesMessage.writeBytes(s.getBytes());
+            producer.send(bytesMessage);
+
+            //对象消息
+            User user = new User("obj_info", "对象消息"); //User对象必须实现Serializable接口
+            ObjectMessage objectMessage = session.createObjectMessage();
+            objectMessage.setObject(user);
+            producer.send(objectMessage);*/
 
 
             session.commit(); //提交会话，该条消息会进入"queue"队列，生产者也完成了历史使命
