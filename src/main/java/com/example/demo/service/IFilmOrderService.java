@@ -16,8 +16,20 @@ import javax.servlet.http.HttpSession;
  * @author fenglang
  * @since 2019-07-25
  */
-public interface IFilmOrderService extends IService<FilmOrder> {
+public interface IFilmOrderService extends IService<FilmOrder> {\
+
+    /**
+     * 订票
+     * @param film
+     * @param request
+     * @return
+     */
     public ResponseMessage order(Film film, HttpServletRequest request);
 
+    /**
+     * 订票 使用队列
+     * @param film
+     * @return
+     */
     public ResponseMessage orderByQueue(Film film);
 }

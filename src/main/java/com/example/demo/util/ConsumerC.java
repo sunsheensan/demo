@@ -3,7 +3,9 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by yz.shi on 2018/4/9.
+ *
+ * @author yz.shi
+ * @date 2018/4/9
  */
 @Component
 public class ConsumerC {

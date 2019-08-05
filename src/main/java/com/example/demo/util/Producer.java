@@ -23,7 +23,9 @@ public class Producer {
     static int i = 100;
     Destination destination = new ActiveMQQueue("yzshi_queue");
 
-//    @Scheduled(fixedDelay = 2000) // 5s执行一次   只有无参的方法才能用该注解
+    /**
+     * @Scheduled(fixedDelay = 2000) // 5s执行一次   只有无参的方法才能用该注解
+     */
     public void convertAndSend() {
         i++;
         String message = "这是定时任务queueProducer发送的第" + i + "个消息！";

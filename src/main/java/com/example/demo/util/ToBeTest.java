@@ -3,7 +3,7 @@ package com.example.demo.util;
 import org.apache.velocity.exception.MathException;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class ToBeTest implements IToBeTest{
     @Override
     public int add(int a,int b){

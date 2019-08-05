@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.jms.*;
 
 @Service
-public class Topic_Producer {
+public class TopicProducer {
     public void sendMessage(String msg){
         try {
             //创建连接工厂
@@ -20,7 +20,6 @@ public class Topic_Producer {
 
             //连接到JMS提供者
             Connection conn = connFactory.createConnection();
-//            conn.setClientID("producer1");
             conn.start();
 
             //事务性会话，自动确认消息
@@ -32,11 +31,11 @@ public class Topic_Producer {
 //            producer.setDeliveryMode(DeliveryMode.PERSISTENT); //持久化
 
 
-//           //文本消息
+//           // 文本消息
 //          TextMessage textMessage = session.createTextMessage("这是文本消息");
 //          producer.send(textMessage);
 
-            //键值对消息
+            // 键值对消息
             MapMessage mapMessage = session.createMapMessage();
             mapMessage.setString("reqDesc", msg);
             producer.send(mapMessage);

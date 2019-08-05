@@ -10,7 +10,9 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by yz.shi on 2018/4/9.
+ *
+ * @author yz.shi
+ * @date 2018/4/9
  */
 @Component
 public class ConsumerB {

@@ -8,6 +8,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * @author fenglang
+ */
 @SpringBootApplication
 @MapperScan("com.example.demo.dao")
 @EnableTransactionManagement
@@ -18,8 +21,6 @@ public class DemoApplication extends SpringBootServletInitializer {
 	}
 
 	public static void main(String[] args) {
-//		new SpringApplicationBuilder(DemoApplication.class)
-//				.properties("spring.config.location=classpath:/springbootconfig.properties").run(args);
 		SpringApplication.run(DemoApplication.class, args);
 	}
 

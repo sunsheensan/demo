@@ -8,9 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author DIY
+ */
 @Component
-public class ActiveMQClient {
-    // 使用JmsListener配置消费者监听的队列，其中text是接收到的消息
+public class ActiveMqClient {
+    /**
+     * 使用JmsListener配置消费者监听的队列，其中text是接收到的消息
+     */
     static int index = 0;
 
     @Autowired

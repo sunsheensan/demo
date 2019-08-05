@@ -9,7 +9,7 @@ import javax.jms.*;
 import java.util.Date;
 
 @Component
-public class Topic_Consumer implements ApplicationRunner {
+public class TopicConsumer implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         init();
@@ -23,7 +23,6 @@ public class Topic_Consumer implements ApplicationRunner {
         );
 
         Connection conn = factory.createConnection();
-//        conn.setClientID("consumer1");
         conn.start();
 
         Session session = conn.createSession(Boolean.FALSE, Session.AUTO_ACKNOWLEDGE);

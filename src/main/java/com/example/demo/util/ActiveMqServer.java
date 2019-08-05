@@ -7,8 +7,13 @@ import org.springframework.stereotype.Service;
 
 import javax.jms.Destination;
 
+
+
+/**
+ * @author DIY
+ */
 @Service
-public class ActiveMQServer {
+public class ActiveMqServer {
     @Autowired
     private JmsTemplate jmsTemplate;
 
